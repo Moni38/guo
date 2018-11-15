@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Guo - Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-storage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+    </div>
+    
+    <div id="container">
+        <button id="myBtn">Sign In</button>
+        <div id="auth" style="display:none">
+            <input type="text" id="username" placeholder="Username">
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+                <button id="login">Log In</button>
+            <span class="close">&times;</span>
+        </div>
+        
+         <button id="myBtn">Sign up</button>
+        <div id="auth" style="display:none">
+            <input type="text" id="username" placeholder="Username">
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login">Log In</button>
+            <span class="close">&times;</span>
+        </div>
+
+        <div id="header">
+            <h1>Guo</h1>
+            <div id="user-info">
+                <span id="display-name"></span>
+                <button id="logout">Log Out</button>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="profile">
+                <h2>My Profile</h2>
+                <p id="profile-name"></p>
+                <img id="profile-photo" width="200">
+
+                <div id="profile-photo">
+                    <p>Add a image for your profile:</p>
+                    <input type="file" id="profile-photo-file" accept="image/gif, image/jpeg, image/png">
+                    <button id="submit-photo">Submit Profile Photo</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li>Friends</li>
+                <li>Top Users</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>
